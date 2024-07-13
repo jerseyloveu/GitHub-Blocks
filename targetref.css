@@ -1,0 +1,168 @@
+body{
+    background: url(https://twistedsifter.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-8.gif);
+    background-size: cover;
+    width: 100vw; 
+    height: 100vh; 
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 183, 183);
+    text-decoration: line-through darkred;
+    text-shadow: 0 0 10px 5px rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    
+}
+
+.subcontainer{
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.profile {
+    margin-top: 10px; 
+}
+
+.icon {
+    border: 3px solid darkred;
+    border-radius: 20px;
+    animation: pulse 3s infinite alternate;
+    width: 14%;
+    margin: 10px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.picbox {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 120px;
+    margin-inline-start: 23px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.topb {
+    background-color: rgba(70, 42, 5, 0.415);
+    border: 5px solid rgba(255, 255, 255, 0.322);
+    border-radius: 20px; 
+    flex: 4; 
+    height: 175px;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+    width: 85%;
+
+}
+
+.second {
+    color: rgb(255, 255, 255);
+    stroke-width: 10cm;
+    -webkit-text-stroke-color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    animation-name: fadeIn;
+    margin-left: 15px;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    background-color: rgba(0, 0, 0, 0.697);
+    border: 3px solid rgb(255, 183, 183);
+    border-radius: 10px; 
+}
+
+.darkred {
+    color: darkred;
+    background-color: white;
+    padding: 3px;
+    margin-right: 2px;
+}
+
+.navigation-bar {
+    background: linear-gradient(to right, rgb(61, 57, 54), #000000); 
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Adjusted */
+    align-items: center;
+}
+
+.profile-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.logo{
+    min-width: 100px;
+    min-height: 60px;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png);
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+.navigation-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center; 
+}
+
+.navigation-list li {
+    margin-right: 20px;
+}
+
+.navigation-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sign-out {
+    background-color: darkred;
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-out:hover {
+    background-color: white;
+    color: darkred;
+}
